@@ -1,0 +1,120 @@
+<html>
+<head>
+    <title>#{title}</title>
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+block content
+  .navbar.navbar-expand-lg.bg-body-tertiary.d-flex.align-items-center.justify-content-center
+    .container-fluid.d-flex.align-items-center.justify-content-center
+        div.collapse.navbar-collapse.px-3(id="navbarTogglerDemo01")
+            a.navbar-brand.d-flex.align-items-center.justify-content-center(href="#") Logo
+            form.d-flex.mt-3(role="search")
+                input.form-control.me-2(type="search", placeholder="Поиск", aria-label="Поиск")
+                
+            ul.navbar-nav.mx-auto
+                li.nav-item
+                    a.nav-link.active(aria-current="page", href="#") Главная
+                li.nav-item
+                    a.nav-link(href="#") Мебель
+                li.nav-item
+                    a.nav-link(href="#") Освещение
+                li.nav-itemv-
+                    a.nav-link(href="#") Коллекции
+                li.nav-item
+                    a.nav-link(href="#") Доставка
+            a.navbar.text-dark.me-3 Moscow
+            a(href='/vhod'): img.image(src="/img/user.png")
+block content1
+    .container-fluid
+        .row(style="background-color:F1F1F1;")
+            .col-12.col-lg-6.px-0: img.img-fluid(src="/img/1.png").w-100
+            .col-12.col-lg-6.d-flex.align-items-center.justify-content-center: h1 Новая коллекция 
+                
+                p.mt-3(style="font-size: 20px;") Наши новые поставки мебели в<br> скандинавском стиле приятно вас удивят
+                button.btn.mt-3.text-white(style="background-color:#DB9969; border-radius: 10px; width: 213px; height: 47px; left: 997px; top: 244.4px;", type='submit') Смотреть
+ 
+    
+    .container-fluid
+        .row(style="background-color:C7BDB3;")
+            
+            .col-12.col-lg-6.d-flex.align-items-center.justify-content-center: h1 Новая акция  
+                
+                p.mt-3(style="font-size: 20px;") Новым клиентам скидка в 30% за <br> приобретение более двух товаров
+                button.btn.mt-3.text-white(style="background-color:#DB9969; border-radius: 10px; width: 213px; height: 47px; left: 997px; top: 244.4px;", type='submit') Смотреть
+            .col-12.col-lg-6.px-0: img.img-fluid(src="/img/2.png").w-100
+
+    .container-fluid
+        .row(style="background-color:AFB9B4;")
+            .col-12.col-lg-6.px-0: img.img-fluid(src="/img/3.png").w-100
+            .col-12.col-lg-6.d-flex.align-items-center.justify-content-center: h1 Гарантия 365  
+                
+                p.mt-3(style="font-size: 20px;") Мы предоставляем гарантию на наш <br> ассортимент на целый год после покупки
+                button.btn.mt-3.text-white(style="background-color:#DB9969; border-radius: 10px; width: 213px; height: 47px; left: 997px; top: 244.4px;", type='submit') Смотреть
+    section(style="background-color: rgba(238, 206, 183, 0.22);")
+        .container(style="padding:120px 0px; ")
+            .row.g-3
+                .col-4: p.w-100(style="font-size:20px") Подпишитесь на нашу новостную<br> рассылку и получите скидку 10% на<br> первую покупку!
+                .col-6: label.visual-hidden.w-100.mt-3(for='E-mail')
+                    input#email.form-control(type='email', placeholder='Введите ваш e-mail' name='email').w-100
+                .col-2: button.btn.w-1003.text-white.mt-3(style="background-color:#DB9969; border-radius: 10px; width: 213px; height: 38px; left: 997px; top: 244.4px;", type='submit') Подписаться
+
+block content3 
+    .container
+        footer.py-5.ps-5
+            .row
+                .col-3
+                    h5 О Компании
+                    ul.nav.flex-column
+                        li.nav-item.mb-2
+                            a.nav-link.p-0.text-muted(href='#') Работа и карьера у нас
+                        li.nav-item.mb-2
+                            a.nav-link.p-0.text-muted(href='#') Свяжитесь с нами
+                        li.nav-item.mb-2
+                            a.nav-link.p-0.text-muted(href='#') Контакты
+                        li.nav-item.mb-2
+                            a.nav-link.p-0.text-muted(href='#') Адреса магазинов
+                        li.nav-item.mb-2
+                            a.nav-link.p-0.text-muted(href='#') Напишите нам
+                        li.nav-item.mb-2
+                            a.nav-link.p-0.text-muted(href='#') Сотрудничество с нами
+                .col-3
+                    h5 Наши услуги
+                    ul.nav.flex-column
+                        li.nav-item.mb-2
+                            a.nav-link.p-0.text-muted(href='#') Доставка и самовывоз
+                        li.nav-item.mb-2
+                            a.nav-link.p-0.text-muted(href='#') Оплата и кредит
+                        li.nav-item.mb-2
+                            a.nav-link.p-0.text-muted(href='#') Оплата частями
+                        li.nav-item.mb-2
+                            a.nav-link.p-0.text-muted(href='#') Возврат
+                        li.nav-item.mb-2
+                            a.nav-link.p-0.text-muted(href='#') Обмен
+                        li.nav-item.mb-2
+                            a.nav-link.p-0.text-muted(href='#') Покупайте со Сбером
+                .col-4.ms-auto
+                    form
+                        h5 Мы в соц сетях
+                        
+                    ul.list-unstyled.d-flex
+                            li.ms-3
+                            a.link-dark(href='#')
+                                svg.bi(width='24' height='24')
+                                use(xlink:href='#twitter')
+                            li.ms-3
+                            a.link-dark(href='#')
+                                svg.bi(width='24' height='24')
+                                use(xlink:href='#instagram')
+                            li.ms-3
+                            a.link-dark(href='#')
+                                svg.bi(width='24' height='24')
+                                use(xlink:href='#facebook')
+
+</body>
+<html>
+
+
+
+
